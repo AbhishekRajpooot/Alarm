@@ -1,0 +1,134 @@
+/*  GLobal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding:.3rem;
+    border-radius: 1px;
+    transition: all 2s ease-in-out;
+  }
+  select {
+    appearance: none;
+    outline: yellow;
+    background-image: url("https://images.pexels.com/photos/1314544/pexels-photo-1314544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2.5rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0e141b;
+    border-color: black;
+  }
+  
+  .mb {
+    margin-bottom: .5rem;
+  }
+   
+  /* End GLobal Styles */
+  
+  .main-container {
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/1314544/pexels-photo-1314544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+  
+  .clock-container {
+    padding: 2.5rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+  
+    background-image: url("https://images.pexels.com/photos/745365/pexels-photo-745365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+  
+  .current-time {
+    font-size: 3rem;
+    color: wheat;
+  }
+  
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .submit-button {
+    border-color: black;
+    border: 15px;
+    border-radius: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .set-alarm-container {
+    width: 100%;
+  }
+  
+  .set-alarm-container .set-alarm-container-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: brown;
+    font-weight: bold;
+    color: wheat;
+    font-size: xx-medium;
+  }
+  
+  .time {
+    color: gold;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .btn:focus,
+  .btn:hover {
+    
+  }
+  
+  .page-title {
+    background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg");
+    align-items: center;
+    text-align: center;
+    color: wheat;
+  }
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container {
+      justify-content: center;
+      border-radius: 50px;
+      width: 450px;
+      min-height: auto;
+    }
+  }
